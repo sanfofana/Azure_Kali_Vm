@@ -1,0 +1,66 @@
+{
+    "name": "Kali",
+    "id": "/subscriptions/947fe645-cd66-4d4a-9e07-eb2f3ec68caf/resourceGroups/Kali_linuxRG/providers/Microsoft.Compute/virtualMachines/Kali",
+    "type": "Microsoft.Compute/virtualMachines",
+    "location": "westus3",
+    "tags": {
+        "VM": "1"
+    },
+    "plan": {
+        "name": "kali",
+        "publisher": "kali-linux",
+        "product": "kali"
+    },
+    "properties": {
+        "vmId": "44763164-432e-4283-a304-e89ae37e781b",
+        "hardwareProfile": {
+            "vmSize": "Standard_B2s"
+        },
+        "storageProfile": {
+            "imageReference": {
+                "publisher": "kali-linux",
+                "offer": "kali",
+                "sku": "kali",
+                "version": "latest",
+                "exactVersion": "2022.3.0"
+            },
+            "osDisk": {
+                "osType": "Linux",
+                "name": "Kali_OsDisk_1_5e7cb5af096e4666b4614792819fec05",
+                "createOption": "FromImage",
+                "caching": "ReadWrite",
+                "managedDisk": {
+                    "id": "/subscriptions/947fe645-cd66-4d4a-9e07-eb2f3ec68caf/resourceGroups/Kali_linuxRG/providers/Microsoft.Compute/disks/Kali_OsDisk_1_5e7cb5af096e4666b4614792819fec05"
+                },
+                "deleteOption": "Delete"
+            },
+            "dataDisks": []
+        },
+        "osProfile": {
+            "computerName": "Kali",
+            "adminUsername": "SanLab",
+            "linuxConfiguration": {
+                "disablePasswordAuthentication": false,
+                "provisionVMAgent": true,
+                "patchSettings": {
+                    "patchMode": "ImageDefault",
+                    "assessmentMode": "ImageDefault"
+                }
+            },
+            "secrets": [],
+            "allowExtensionOperations": true,
+            "requireGuestProvisionSignal": true
+        },
+        "networkProfile": {
+            "networkInterfaces": [
+                {
+                    "id": "/subscriptions/947fe645-cd66-4d4a-9e07-eb2f3ec68caf/resourceGroups/Kali_linuxRG/providers/Microsoft.Network/networkInterfaces/kali32",
+                    "properties": {
+                        "deleteOption": "Delete"
+                    }
+                }
+            ]
+        },
+        "provisioningState": "Succeeded"
+    }
+}
