@@ -1,6 +1,6 @@
 {
     "name": "Kali",
-    "id": "/subscriptions/947fe645-cd66-4d4a-9e07-eb2f3ec68caf/resourceGroups/Kali_linuxRG/providers/Microsoft.Compute/virtualMachines/Kali",
+    "id": ", #vm Id need to be added here
     "type": "Microsoft.Compute/virtualMachines",
     "location": "westus3",
     "tags": {
@@ -12,7 +12,7 @@
         "product": "kali"
     },
     "properties": {
-        "vmId": "44763164-432e-4283-a304-e89ae37e781b",
+        "vmId": "", #Id need to be added 
         "hardwareProfile": {
             "vmSize": "Standard_B2s"
         },
@@ -38,7 +38,7 @@
         },
         "osProfile": {
             "computerName": "Kali",
-            "adminUsername": "SanLab",
+            "adminUsername": "", # username
             "linuxConfiguration": {
                 "disablePasswordAuthentication": false,
                 "provisionVMAgent": true,
@@ -54,7 +54,7 @@
         "networkProfile": {
             "networkInterfaces": [
                 {
-                    "id": "/subscriptions/947fe645-cd66-4d4a-9e07-eb2f3ec68caf/resourceGroups/Kali_linuxRG/providers/Microsoft.Network/networkInterfaces/kali32",
+                    "id": "", #space holder for ID
                     "properties": {
                         "deleteOption": "Delete"
                     }
